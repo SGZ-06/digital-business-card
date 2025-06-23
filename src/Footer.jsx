@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer_social-networks">
+      <div className="footer_social-networks container">
         <a href="">
           {" "}
           <i class="fa-brands fa-square-twitter"></i>

@@ -1,6 +1,6 @@
 function Main() {
   return (
-    <main className="main">
+    <main className="main container">
       <h3>About</h3>
       <p>
         I am a frontend developer with a particular interest in making things

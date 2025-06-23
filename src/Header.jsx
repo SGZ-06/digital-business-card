@@ -6,7 +6,7 @@ function Header() {
       <div className="profile-img">
         <img src={profileImg}></img>
       </div>
-      <div className="header_information">
+      <div className="header_information container">
         <h1>Daniel Quintero</h1>
         <h2>Frontend Developer</h2>
         <h3>dquinteromarmolg.website</h3>

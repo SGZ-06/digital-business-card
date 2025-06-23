@@ -1,4 +1,21 @@
-* {
+/* ==================== VARIABLES ==================== */
+:root {
+  /* Color palette */
+  --clr-bg-app: #23252c;
+  --clr-bg-card: #1a1b21;
+  --clr-primary: #5093e2;
+  --clr-accent: #f3bf99;
+  --clr-neutral: #918e9b;
+
+  /* Radii */
+  --radius-sm: 5px;
+  --radius-md: 10px;
+}
+
+/* ==================== RESET ==================== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -6,22 +23,24 @@ html,
 body {
   margin: 0;
   padding: 0;
+  min-width: 300px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
 }
 
 body {
-  background-color: #23252c;
+  background-color: var(--clr-bg-app);
   display: flex;
   place-content: center;
-  min-width: 300px;
-  min-height: 100vh;
   padding: 4em 0;
 }
 
+/* ==================== LAYOUT (CARD WRAPPER) ==================== */
 #root {
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  width: 300px;
-  background-color: #1a1b21;
+  max-width: 300px;
+  background-color: var(--clr-bg-card);
   color: #ffffff;
   font-family: "Inter", sans-serif;
   display: flex;
@@ -29,6 +48,7 @@ body {
   justify-content: space-between;
 }
 
+/* ==================== HEADER ==================== */
 .header {
   text-align: center;
 }
@@ -46,15 +66,9 @@ body {
   transform-origin: 60% 40%;
   transform: scale(1);
 }
-/* 
 .container {
   width: 80%;
-  margin: 0 auto;
-} */
-
-.header_information {
-  width: 80%;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .header h1 {
@@ -65,7 +79,7 @@ body {
 
 .header h2 {
   font-size: 0.8rem;
-  color: #f3bf99;
+  color: var(--clr-accent);
   margin-top: 0.25em;
   font-weight: 400;
 }
@@ -86,6 +100,7 @@ body {
   margin-right: 0.5em;
 }
 
+/* ==================== BUTTONS ==================== */
 .button {
   display: inline-block;
   width: 120px;
@@ -99,13 +114,8 @@ body {
 }
 
 .button-blue {
-  background-color: #5093e2;
+  background-color: var(--clr-primary);
   color: white;
-}
-
-.main {
-  width: 80%;
-  margin: 0 auto;
 }
 
 .main h3 {
@@ -120,6 +130,7 @@ body {
   font-weight: 300;
 }
 
+/* ==================== FOOTER ==================== */
 .footer {
   padding: 1em 0;
 }
@@ -127,12 +138,10 @@ body {
 .footer_social-networks {
   display: flex;
   justify-content: center;
-  width: 80%;
-  margin: 0 auto;
   font-size: 1.56rem;
   gap: 1em;
 }
 
 .footer_social-networks a {
-  color: #918e9b;
+  color: var(--clr-neutral);
 }
